@@ -183,7 +183,6 @@ function showQuestion() {
       } else {
         showResult();
       }
-      console.log(totalScore);
     };
     optionsContainer.appendChild(option);
   });
