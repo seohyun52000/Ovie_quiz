@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>毛囊生存戰</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" />
+</head>
+
+<body>
+  <div class="quiz-container">
+    <div id="quiz">
+      <div class="title">
+        <h1>【毛囊生存戰】</h1>
+        <h2>1分鐘測出你的「頂上危機」指數！</h2>
+        <div class="progress-info">
+          <span id="questionNumber">第 1 題 / 共 5 題</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <div class="question" id="question">
+        題目載入中...
+      </div>
+      <div class="options" id="options"></div>
+    </div>
+    <div class="result" id="result">
+      <div class="result-image" id="resultImage">
+      </div>
+      <button class="restart-btn" onclick="restartQuiz()">
+        再測一次
+      </button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
