@@ -47,7 +47,7 @@
 
 #prevButton {
   position: absolute;
-  top: 2%;
+  top: 20px;
   left: 5%;
   z-index: 999;
   cursor: pointer;
@@ -204,5 +204,9 @@
 
   .progress-bar {
     height: 5px;
+  }
+
+  #prevButton {
+    top: 13px;
   }
 }
