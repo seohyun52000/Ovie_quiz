@@ -18,7 +18,7 @@
 .title {
   text-align: center;
   position: absolute;
-  top: 2%;
+  top: 20px;
   left: 0;
   width: 100%;
 }
@@ -185,18 +185,6 @@
 }
 
 @media (max-width: 767px) {
-  .title {
-    top: 3%;
-  }
-
-  .title h1 {
-    font-size: 17px;
-  }
-
-  .title h2 {
-    font-size: 13px;
-  }
-
   .progress-info {
     margin: 7px 0;
     font-size: 10px;
