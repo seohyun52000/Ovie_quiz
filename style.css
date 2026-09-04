@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +13,57 @@
   margin: auto;
 }
 
+#start {
+  display: block;
+  position: relative;
+}
+
+#start img {
+  width: 100%;
+}
+
+#start .btn-item {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  width: 42%;
+  bottom: 12.8%;
+  transform: translateX(-50%);
+}
+
+#start .btn-item>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start .btn-item .c_btn {
+  display: none;
+}
+
+#start .btn-item img {
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+#start .btn-item:hover .o_btn {
+  opacity: 0;
+}
+
+#start .btn-item .h_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+#start .btn-item:hover .h_btn {
+  opacity: 1;
+}
+
 #quiz {
+  display: none;
   position: relative;
 }
 
@@ -27,6 +79,7 @@
   margin: 10px 0;
   font-size: 12px;
   color: #666;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .progress-bar {
@@ -101,8 +154,8 @@
 
 .restart-btn {
   border: none;
-  background: #8c7065;
-  color: white;
+  background: #5E4E2D;
+  color: #D3C7BC;
   padding: 6px 13px;
   border-radius: 30px;
   font-size: 12px;
