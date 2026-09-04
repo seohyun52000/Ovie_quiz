@@ -258,4 +258,27 @@ function initQuiz() {
   document.getElementById("result").style.display = "none";
 }
 
+// 預載入圖片
+function preloadImages() {
+  const imageUrls = [];
+
+  questions.forEach((question) => {
+    imageUrls.push(question.question);
+
+    question.options.forEach((option) => {
+      imageUrls.push(option.image);
+    });
+  });
+
+  results.forEach((result) => {
+    imageUrls.push(result.result);
+  });
+
+  imageUrls.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+}
+
+preloadImages();
 initQuiz();
